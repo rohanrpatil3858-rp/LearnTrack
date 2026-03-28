@@ -73,7 +73,6 @@ classDiagram
         -String lastName
         -String email
         +getId()
-        +setId()
         +getFirstName()
         +setFirstName()
         +getLastName()
@@ -98,7 +97,6 @@ classDiagram
         -int durationInWeeks
         -CourseStatus status
         +getId()
-        +setId()
         +getCourseName()
         +setCourseName()
         +getDescription()
@@ -115,6 +113,9 @@ classDiagram
         -int courseId
         -String enrollmentDate
         -EnrollmentStatus status
+        +getId()
+        +getStudentId()
+        +getCourseId()
         +getEnrollmentDate()
         +setEnrollmentDate()
         +getStatus()
