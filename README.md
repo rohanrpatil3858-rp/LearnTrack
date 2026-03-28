@@ -83,7 +83,7 @@ classDiagram
     }
     
     class Student {
-        -String batch
+        -int batch
         -boolean active
         +getBatch()
         +setBatch()
@@ -115,12 +115,6 @@ classDiagram
         -int courseId
         -String enrollmentDate
         -EnrollmentStatus status
-        +getId()
-        +setId()
-        +getStudentId()
-        +setStudentId()
-        +getCourseId()
-        +setCourseId()
         +getEnrollmentDate()
         +setEnrollmentDate()
         +getStatus()
@@ -134,14 +128,13 @@ classDiagram
         <<enumeration>>
         ACTIVE
         INACTIVE
-        COMPLETED
     }
     
     class EnrollmentStatus {
         <<enumeration>>
-        ENROLLED
+        ACTIVE
         COMPLETED
-        DROPPED
+        CANCELLED
     }
     
     Course --> CourseStatus
